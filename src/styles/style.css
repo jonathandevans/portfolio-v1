@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
-* {
+:root {
+    --background: rgba(85, 214, 170, .85);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #F6F8FA;
     font-family: Poppins, sans-serif;
+    font-weight: 400;
 }
 
 header {
