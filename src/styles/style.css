@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
 :root {
-    --background: #55d6aad9;
+    --header-background: #9855cbe5;
+    --background: #F6F8FA;
 }
 
 *, *::before, *::after {
@@ -10,61 +11,28 @@
 
 body {
     margin: 0;
-    background: #F6F8FA;
+    background: var(--background);
     font-family: Poppins, sans-serif;
     font-weight: 400;
 }
 
+
+/* header style starts */
+
 header {
     width: 100%;
-    height: 80px;
-    display: block;
+    position: fixed;
+    z-index: 999;
 
-    background-color: red;
+    background: var(--header-background);
+    text-align: center;
 }
 
-.inner-header {
-    width: 80%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-
-    background-color: blue;
-}
-
-.logo-container {
-    height: 100%;
-    display: table;
-    float: left;
-}
-
-.logo-container h1 {
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-
-    color: white;
-    font-size: 30px;
+.logo {
     font-weight: 600;
+    font-size: 30px;
 }
 
-.logo-container h1 span {
-    font-weight:400;
-}
-
-.nav-container {
-    float: right;
-}
-
-.nav-container ul {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.nav-container li {
-    display: inline-block;
-    margin-left: 15px;
-    padding-top: 28px;
+nav {
+    position: absolute;
 }
