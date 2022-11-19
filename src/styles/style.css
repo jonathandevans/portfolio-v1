@@ -37,6 +37,7 @@ nav {
     position: absolute;
     left: 0;
     top: 100%;
+    display: none;
 
     background: var(--header-background);
     text-align: left;
@@ -62,4 +63,8 @@ nav a {
 
 nav a:hover {
     color: white;
+}
+
+.nav-toggle:checked ~ nav {
+    display: block;
 }
