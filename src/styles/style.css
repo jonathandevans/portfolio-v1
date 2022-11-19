@@ -32,6 +32,57 @@ header {
     font-weight: 600;
 }
 
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 1em;
+    display: flex;
+
+    align-items: center;
+}
+
+.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+    height: 3px;
+    width: 2em;
+    display: block;
+    position: relative;
+
+    background: black;
+    border-radius: 2px;
+}
+
+.nav-toggle-label span::before, .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    top: 9px;
+}
+
+.nav-toggle-label span::after {
+    bottom: 9px;
+}
+
+.nav-toggle-label:hover span, .nav-toggle-label:hover span::before, .nav-toggle-label:hover span::after {
+    background: white;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
 nav {
     width: 100%;
     position: absolute;
@@ -40,6 +91,10 @@ nav {
 
     background: var(--header-background);
     text-align: left;
+
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
 }
 
 nav ul {
@@ -58,6 +113,9 @@ nav a {
     color: black;
     text-decoration: none;
     font-size: 1.2rem;
+
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover {
