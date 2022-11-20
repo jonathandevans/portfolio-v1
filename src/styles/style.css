@@ -121,3 +121,41 @@ nav a {
 nav a:hover {
     color: white;
 }
+
+@media screen and (min-width: 925px) {
+    
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns:  1fr auto minmax(700px, 3fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 2 / span 1;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / span 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav li {
+        margin-left: 1.5em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        opacity: 1;
+    }
+}
