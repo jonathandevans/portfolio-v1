@@ -113,6 +113,10 @@ nav li {
     margin-left: 1em;
 }
 
+nav li:hover {
+    transform: scale(0.95);
+}
+
 nav a {
     color: var(--header-text);
     text-decoration: none;
