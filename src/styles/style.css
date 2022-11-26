@@ -6,6 +6,7 @@
     --header-text-hover: #28104E;
 
     --background: #F6F8FA;
+    --text: #28104E;
 }
 
 *, *::before, *::after {
@@ -139,7 +140,7 @@ nav a:hover {
 
     header {
         display: grid;
-        grid-template-columns:  1fr auto minmax(700px, 3fr) 1fr;
+        grid-template-columns:  1fr auto minmax(700px, 3.7fr) 1fr;
     }
 
     .logo {
@@ -170,3 +171,65 @@ nav a:hover {
 }
 
 /* header style ends */
+
+/* main body start */
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* home section start */
+
+.home-section {
+    margin-top: 7em;
+    height: 80vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: minmax(10px, auto) minmax(10px, auto);
+    grid-template-rows: 60% minmax(10px, auto) minmax(10px, auto) minmax(10px, auto);
+
+    border: 2px solid red;
+    color: var(--text);
+}
+
+.home-section .img-holder {
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.home-section img {
+    height: 80%;
+    border: 2px solid red;
+}
+
+.home-section h2 {
+    grid-column: 2;
+    grid-row: 2;
+
+    text-align: right;
+    font-size: 2em;
+}
+
+.home-section h1 {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 1.8em;
+
+    text-align: right;
+    font-size: 4em;
+}
+
+.home-section h3 {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+/* home section end */
+
+/* main body end */
