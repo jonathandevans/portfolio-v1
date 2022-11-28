@@ -7,6 +7,7 @@
 
     --background: #F6F8FA;
     --text: #28104E;
+    --highlight-colour: #6437A0;
 }
 
 *, *::before, *::after {
@@ -199,13 +200,54 @@ nav a:hover {
 .home-section .img-holder {
     height: 100%;
     width: 100%;
+    padding-right: 5em;
     grid-column: 2;
     grid-row: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.home-section .img-background {
+    aspect-ratio: 1/1;
+    height: 100%;
+    display: flex;
+
+    --width: 0.5rem;
+    --stroke1:#6437a07c;
+    --stroke2: var(--background);
+    --ang1: -120deg;
+    --ang2: 60deg;
+    background: repeating-linear-gradient(
+        var(--ang1, var(--ang2)),
+        var(--stroke1),
+        var(--stroke1) var(--width),
+        var(--stroke2) var(--width),
+        var(--stroke2) calc(var(--width) * 2.5)
+    );
+    border: 3px solid var(--stroke1);
+    border-radius: 19% 81% 81% 19% / 76% 54% 46% 24% ;
 }
 
 .home-section img {
-    height: 80%;
-    border: 2px solid red;
+    height: 85%;
+    margin: auto;
+
+    --width: 0.5rem;
+    --stroke1:#7953aa;
+    --stroke2: var(--background);
+    --ang1: 120deg;
+    --ang2: -60deg;
+    background: repeating-linear-gradient(
+        var(--ang1, var(--ang2)),
+        var(--stroke1),
+        var(--stroke1) var(--width),
+        var(--stroke2) var(--width),
+        var(--stroke2) calc(var(--width) * 2.5)
+    );
+    border: 3px solid var(--stroke1);
+    border-radius: 74% 26% 47% 53% / 40% 26% 74% 60%;
 }
 
 .home-section h2 {
