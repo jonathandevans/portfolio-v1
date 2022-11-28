@@ -193,7 +193,6 @@ nav a:hover {
     grid-template-columns: minmax(10px, auto) minmax(10px, auto);
     grid-template-rows: 60% minmax(10px, auto) minmax(10px, auto) minmax(10px, auto);
 
-    border: 2px solid red;
     color: var(--text);
 }
 
@@ -215,7 +214,7 @@ nav a:hover {
     display: flex;
 
     --width: 0.5rem;
-    --stroke1:#6437a07c;
+    --stroke1:#aa90cc;
     --stroke2: var(--background);
     --ang1: -120deg;
     --ang2: 60deg;
