@@ -14,27 +14,23 @@
 
     <body>
         <!-- Header -->
-        <header>
-            <h1 class="logo"><span>&lt;</span> jonathane <span>&gt;</span></h1>
+        <header class="main-header">
+            <h1 class="main-header__logo"><span>&lt;</span> jonathane <span>&gt;</span></h1>
 
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="">&lt; home &gt;</a></li>
-                    <li><a href="">&lt; personal-projects &gt;</a></li>
-                    <li><a href="">&lt; about &gt;</a></li>
-                    <li><a href="">&lt; contact &gt;</a></li>
+            <nav class="main-header__nav">
+                <ul class="main-header__items">
+                    <li class="main-header__item"><a href="">&lt; home &gt;</a></li>
+                    <li class="main-header__item"><a href="">&lt; personal-projects &gt;</a></li>
+                    <li class="main-header__item"><a href="">&lt; about &gt;</a></li>
+                    <li class="main-header__item"><a href="">&lt; contact &gt;</a></li>
                 </ul>
             </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
         </header>
 
         <!-- Main Body -->
         <div class="content">
             <!-- Home -->
-            <div class="home-section">
+            <div id="home-section" class="main-body">
                 <div class="img-holder">
                     <div class="img-background">
                         <img src="./assets/portfolio-home-img.png">
