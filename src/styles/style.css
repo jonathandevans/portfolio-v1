@@ -17,21 +17,48 @@ body {
 .content {
     margin-top: 70px;
     height: 100%;
-    background: green;
+    /* background: green; */
 }
 
 .main-body {
     height: 100%;
     margin: 0 300px;
-    background: blue;
+    /* background: blue; */
 }
 
 /* home starts */
 
 .home__text {
-    padding-top: 180px;
+    display: inline-block;
+    padding-top: 300px;
+
     color: var(--text);
-    background: red;
+    /* background: red; */
+}
+
+.home__greeting-text {
+    margin: 0;
+}
+
+.home__name-text {
+    margin: 0;
+}
+
+.home__description-text {
+    margin: 0;
+}
+
+.home__img-container {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: -10px;
+    width: 40%;
+    /* background: purple; */
+}
+
+.home__img {
+    width: 100%;
 }
 
 /* home ends */
