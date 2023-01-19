@@ -91,16 +91,16 @@
     color: #6437a0;
 }
 
-#home {
-    /* background: red; */
-}
-
 /* home ends */
 
 /* personal projects starts */
 
 #personal-projects {
     background: var(--highlight-colour);
+}
+
+.projects__inner-container {
+    border: white 4px solid;
 }
 
 /* personal projects ends */
