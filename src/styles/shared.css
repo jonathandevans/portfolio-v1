@@ -5,6 +5,8 @@
     --header-text: #6437a0;
     --header-text-hover: #28104e;
 
+    --footer-background: #a87fde;
+
     --background: #f6f8fa;
     --text: #28104e;
     --highlight-colour: #6437a0;
@@ -36,6 +38,7 @@ body {
 .main-header__logo {
     display: inline-block;
     vertical-align: middle;
+    margin: 16px 240px;
 
     font-weight: 600;
     font-size: 1.5em;
@@ -45,6 +48,9 @@ body {
 .main-header__nav {
     display: inline-block;
     vertical-align: middle;
+    width: calc(100% - 870px);
+
+    text-align: right;
 }
 
 .main-header__items {
@@ -54,9 +60,16 @@ body {
 
 .main-header__item {
     display: inline-block;
+    margin: 0 16px;
 }
 
 .main-header__item a {
     text-decoration: none;
     color: var(--header-text);
+    font-weight: 500;
+}
+
+.main-footer {
+    height: 60px;
+    background: var(--footer-background);
 }
