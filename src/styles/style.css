@@ -1,101 +1,63 @@
-/* main body start */
+:root {
+    --background: #f6f8fa;
+    --text: #28104e;
+    --highlight-colour: #6437a0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/* content starts */
 
 .content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 70px;
+    height: 100%;
+    background: green;
 }
 
-/* home section start */
+.main-body {
+    height: 100%;
+    margin: 0 300px;
+    background: blue;
+}
 
-.home-section {
-    margin-top: 7em;
-    height: 80vh;
-    width: 70%;
-    display: grid;
-    grid-template-columns: minmax(10px, auto) minmax(10px, auto);
-    grid-template-rows: 60% minmax(10px, auto) minmax(10px, auto) minmax(10px, auto);
+/* home starts */
 
+.home__text {
+    padding-top: 180px;
     color: var(--text);
+    background: red;
 }
 
-.home-section .img-holder {
-    height: 100%;
-    width: 100%;
-    padding-right: 5em;
-    grid-column: 2;
-    grid-row: 1;
+/* home ends */
 
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+/* personal projects starts */
+
+#personal-projects {
+    display: none;
 }
 
-.home-section .img-background {
-    aspect-ratio: 1/1;
-    height: 100%;
-    display: flex;
+/* personal projects ends */
 
-    --width: 0.5rem;
-    --stroke1:#aa90cc;
-    --stroke2: var(--background);
-    --ang1: -120deg;
-    --ang2: 60deg;
-    background: repeating-linear-gradient(
-        var(--ang1, var(--ang2)),
-        var(--stroke1),
-        var(--stroke1) var(--width),
-        var(--stroke2) var(--width),
-        var(--stroke2) calc(var(--width) * 2.5)
-    );
-    border: 3px solid var(--stroke1);
-    border-radius: 19% 81% 81% 19% / 76% 54% 46% 24% ;
+/* about starts */
+
+#about {
+    display: none;
 }
 
-.home-section img {
-    height: 85%;
-    margin: auto;
+/* about starts */
 
-    --width: 0.5rem;
-    --stroke1:#7953aa;
-    --stroke2: var(--background);
-    --ang1: 120deg;
-    --ang2: -60deg;
-    background: repeating-linear-gradient(
-        var(--ang1, var(--ang2)),
-        var(--stroke1),
-        var(--stroke1) var(--width),
-        var(--stroke2) var(--width),
-        var(--stroke2) calc(var(--width) * 2.5)
-    );
-    border: 3px solid var(--stroke1);
-    border-radius: 74% 26% 47% 53% / 40% 26% 74% 60%;
+/* contact starts */
+
+#contact {
+    display: none;
 }
 
-.home-section h2 {
-    grid-column: 2;
-    grid-row: 2;
+/* contact ends */
 
-    text-align: right;
-    font-size: 2em;
-}
-
-.home-section h1 {
-    grid-column: 2;
-    grid-row: 3;
-    font-size: 1.8em;
-
-    text-align: right;
-    font-size: 4em;
-}
-
-.home-section h3 {
-    grid-row: 4;
-    grid-column: 2;
-}
-
-/* home section end */
-
-/* main body end */
+/* content ends */
