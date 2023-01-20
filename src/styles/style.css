@@ -136,11 +136,12 @@
     text-align: center;
     margin: 8px;
     padding: 16px;
+    position: relative;
 
     background: var(--main1);
     border: solid var(--main1) 4px;
     border-radius: 8px;
-    box-shadow: inset 0 0 0 5px  var(--main);
+    box-shadow: inset -7px -7px 0 0  var(--main);
 }
 
 .projects__items .highlight {
@@ -150,7 +151,7 @@
 
 .projects__item:hover,
 .projects__item:active {
-    box-shadow: inset 0 0 0 5px  var(--highlight);
+    box-shadow: inset 7px 7px 0 0  var(--highlight);
 }
 
 .projects__item-title {
@@ -163,6 +164,7 @@
 .projects__tags-container {
     margin: 0;
     margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .projects__tags-title {
@@ -251,7 +253,68 @@
     fill: var(--main1);
 }
 
+.projects__description {
+    margin: auto;
+    width: 80%;
+}
 
+.projects__button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.projects__github-button {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+/* Creates circle */
+.projects__github-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: var(--highlight);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+/* Adjusts button text */
+.projects__github-button span {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--text);
+}
+
+/* Creates button arrow */
+.projects__github-button svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--text);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.projects__github-button:hover:before {
+    width: 100%;
+    background: var(--soft);
+}
 
 /* personal projects ends */
 
