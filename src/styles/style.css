@@ -56,11 +56,11 @@
     transition: 0.3s;
 }
 
-.social-button:focus, .social-button:hover {
+.social-button:active, .social-button:hover {
     color: var(--main1);
 }
 
-.social-button:focus::after, .social-button:hover::after {
+.social-button:active::after, .social-button:hover::after {
     width: calc(100% + 2px);
     height: calc(100% + 2px);
     margin-left: calc(-50% - 1px);
@@ -261,7 +261,7 @@
     color: var(--text);
     display: inline-block;
     background: var(--soft);
-    border: 2px solid var(--highlight-colour);
+    border: 2px solid var(--main);
     border-radius: 25px;
     padding: 2px 8px;
     box-shadow: 1px 1px 1px 1px rgba(100, 55, 160, 0.5);
