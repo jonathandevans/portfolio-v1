@@ -2,14 +2,16 @@
 
 :root {
     --header-background: #e4e6e9;
-    --header-text: #6437a0;
-    --header-text-hover: #28104e;
-
+    --background: #f6f8fa;
     --footer-background: #a87fde;
 
-    --background: #f6f8fa;
+    --main: #6437a0;
+    --main1: white;
+    --highlight: #9974c8;
+    --soft: #dfd0f3;
+
+    --heading: #6437a0;
     --text: #28104e;
-    --highlight-colour: #6437a0;
 }
 
 *,
@@ -40,6 +42,11 @@ body {
     background: var(--header-background);
 }
 
+.main-header__logo-link {
+    text-decoration: none;
+    cursor: default;
+}
+
 .main-header__logo {
     display: inline-block;
     vertical-align: middle;
@@ -47,7 +54,7 @@ body {
 
     font-weight: 600;
     font-size: 1.5em;
-    color: var(--header-text);
+    color: var(--heading);
 }
 
 .main-header__nav {
@@ -70,7 +77,7 @@ body {
 
 .main-header__item a {
     text-decoration: none;
-    color: var(--header-text);
+    color: var(--heading);
     font-weight: 500;
 }
 
