@@ -151,7 +151,14 @@
 /* about starts */
 
 #about {
-    display: none;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.about__title {
+    margin: 0 125px;
+
+    color: var(--highlight-colour);
 }
 
 /* about starts */
