@@ -96,8 +96,7 @@
 /* personal projects starts */
 
 #personal-projects {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding: 3% 5%;
     background: var(--highlight-colour);
 }
 
@@ -124,7 +123,7 @@
 
 .projects__item {
     display: inline-block;
-    width: 31%;
+    width: 29%;
     height: 85%;
     vertical-align: middle;
     text-align: center;
@@ -139,11 +138,19 @@
 
 .projects__items .highlight {
     height: 95%;
+    width: 35%;
 }
 
 .projects__item:hover,
 .projects__item:active {
     box-shadow: inset 0 0 0 5px  #9764db;
+}
+
+.projects__item-title {
+    margin: 0;
+    padding-top: 10px;
+    color: var(--text);
+    text-align: left;
 }
 
 /* personal projects ends */
