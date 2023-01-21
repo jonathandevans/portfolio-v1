@@ -6,6 +6,7 @@
 }
 
 .main-body {
+    margin-bottom: 15px;
     height: 650px;
     padding: 0 15%;
 
@@ -181,8 +182,6 @@
     margin: 0;
     padding: 40px 50px 10px 50px;
     height: 100%;
-
-    /* border: white 5px solid; */
 }
 
 .projects__title {
@@ -391,21 +390,56 @@
 /* about starts */
 
 #about {
-    padding-top: 5%;
-    padding-bottom: 3%;
+    padding: 3% 5%;
+}
+
+.about__inner-container {
+    position: relative;
+    margin: 0;
+    padding: 40px 50px 10px 50px;
+    height: 100%;
 }
 
 .about__title {
-    margin: 0 125px;
+    margin: 0 75px;
 
     color: var(--main);
+}
+
+.about__who-am-i-container {
+    margin: 10px 100px;
+    padding: 10px 20px;
+    position: relative;
+    bottom: -20px;
+    left: -25px;
+    z-index: 1;
+
+    border: solid 4px var(--main);
+    border-radius: 25px;
+    color: var(--text);
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(100, 55, 160, 0.5);
+}
+
+.about__interests-container {
+    margin: 10px 100px;
+    padding: 10px 20px;
+    position: relative;
+    top: -15px;
+    right: -15px;
+
+    border: solid 4px var(--main);
+    border-radius: 25px;
+    color: var(--text);
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(100, 55, 160, 0.5);
 }
 
 /* about starts */
 
 /* contact starts */
 
-#contact {
+#education-and-experience {
     display: none;
 }
 
