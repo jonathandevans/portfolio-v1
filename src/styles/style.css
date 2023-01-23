@@ -169,6 +169,122 @@
 
 /* home ends */
 
+/* about starts */
+
+#about-me {
+    padding: 3% 5%;
+    background: var(--main);
+    box-shadow: 0 0 4px 4px rgba(100, 55, 160, 0.3);
+}
+
+.about__inner-container {
+    position: relative;
+    margin: 0;
+    padding: 40px 50px 10px 50px;
+    height: 100%;
+}
+
+.about__corner-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 300px;
+    fill: var(--main1);
+}
+
+.about__corner-top-left-smaller {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 150px;
+    width: 300px;
+    fill: var(--highlight);
+}
+
+.about__bar-top-right {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    fill: var(--main1);
+
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.about__bar-top-right-smaller {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    fill: var(--highlight);
+
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.about__corner-bottom-right {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background-position: bottom 0;
+    fill: var(--highlight);
+}
+
+.about__corner-bottom-right-smaller {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-position: bottom 0;
+    fill: var(--main1);
+}
+
+.about__title {
+    margin: 0 75px;
+
+    color: var(--main1);
+}
+
+.about__who-am-i-container {
+    margin: 10px 100px;
+    padding: 10px 20px;
+    position: relative;
+    bottom: -20px;
+    left: -25px;
+    z-index: 1;
+
+    border: solid 4px var(--main);
+    border-radius: 25px;
+    color: var(--text);
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(100, 55, 160, 0.5);
+}
+
+.about__interests-container {
+    margin: 10px 100px;
+    padding: 10px 20px;
+    position: relative;
+    top: -15px;
+    right: -15px;
+
+    border: solid 4px var(--main);
+    border-radius: 25px;
+    color: var(--text);
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(100, 55, 160, 0.5);
+}
+
+/* about starts */
+
+/* education-and-experience starts */
+
+#education-and-experience {
+    padding: 3% 5%;
+}
+
+/* education-and-experience ends */
+
 /* personal projects starts */
 
 #personal-projects {
@@ -266,62 +382,6 @@
     box-shadow: 1px 1px 1px 1px rgba(100, 55, 160, 0.5);
 }
 
-.projects__corner-top-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 200px;
-    width: 300px;
-    fill: var(--main1);
-}
-
-.projects__corner-top-left-smaller {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    height: 150px;
-    width: 300px;
-    fill: var(--highlight);
-}
-
-.projects__bar-top-right {
-    position: absolute;
-    top: 10px;
-    right: 100px;
-    fill: var(--main1);
-
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-
-.projects__bar-top-right-smaller {
-    position: absolute;
-    top: 0;
-    right: 80px;
-    fill: var(--highlight);
-
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-
-.projects__corner-bottom-right {
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-    background-position: bottom 0;
-    fill: var(--highlight);
-}
-
-.projects__corner-bottom-right-smaller {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-position: bottom 0;
-    fill: var(--main1);
-}
-
 .projects__description {
     margin: auto;
     width: 80%;
@@ -386,63 +446,5 @@
 }
 
 /* personal projects ends */
-
-/* about starts */
-
-#about {
-    padding: 3% 5%;
-}
-
-.about__inner-container {
-    position: relative;
-    margin: 0;
-    padding: 40px 50px 10px 50px;
-    height: 100%;
-}
-
-.about__title {
-    margin: 0 75px;
-
-    color: var(--main);
-}
-
-.about__who-am-i-container {
-    margin: 10px 100px;
-    padding: 10px 20px;
-    position: relative;
-    bottom: -20px;
-    left: -25px;
-    z-index: 1;
-
-    border: solid 4px var(--main);
-    border-radius: 25px;
-    color: var(--text);
-    background: white;
-    box-shadow: 2px 2px 2px 2px rgba(100, 55, 160, 0.5);
-}
-
-.about__interests-container {
-    margin: 10px 100px;
-    padding: 10px 20px;
-    position: relative;
-    top: -15px;
-    right: -15px;
-
-    border: solid 4px var(--main);
-    border-radius: 25px;
-    color: var(--text);
-    background: white;
-    box-shadow: 2px 2px 2px 2px rgba(100, 55, 160, 0.5);
-}
-
-/* about starts */
-
-/* contact starts */
-
-#education-and-experience {
-    display: none;
-}
-
-/* contact ends */
 
 /* content ends */
