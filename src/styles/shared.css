@@ -2,11 +2,12 @@
 
 :root {
     --header-background: #e4e6e9;
-    --background: #f6f8fa;
+    --background: #f6f8fad7;
     --footer-background: #a87fde;
 
     --main: #6437a0;
     --main1: white;
+    --main2: #8a5fc3;
     --highlight: #9974c8;
     --soft: #dfd0f3;
 
@@ -22,7 +23,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 50px;
 }
 
 body {
@@ -39,7 +40,7 @@ body {
     left: 0;
     z-index: 20;
 
-    background: var(--header-background);
+    background: var(--background);
 }
 
 .main-header__logo-link {
