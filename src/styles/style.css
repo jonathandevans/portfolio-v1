@@ -7,7 +7,7 @@
 
 .main-body {
     margin-bottom: 15px;
-    height: 650px;
+    height: 750px;
     padding: 0 15%;
 
     /* background: blue; */
@@ -281,6 +281,65 @@
 
 #education-and-experience {
     padding: 3% 5%;
+    z-index: 3;
+}
+
+.education__inner-container {
+    position: relative;
+    margin: 0;
+    padding: 20px 50px 10px 50px;
+    height: 100%;
+    z-index: 3;
+}
+
+.education__title {
+    margin: 0 75px;
+    margin-bottom: 25px;
+    color: var(--main);
+}
+
+.education__grid-container {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.education__category {
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    z-index: 3;
+    vertical-align: bottom;
+    margin: 0 5px;
+
+    text-align: center;
+    border: solid 4px var(--main);
+    background: var(--main1);
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px rgba(100, 55, 160, 0.3);
+}
+
+.education__category-title {
+    padding-left: 25px;
+    text-align: left;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.education__list-container {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.education__list-title {
+    color: var(--highlight);
+}
+
+.education__list {
+    list-style: none;
+    padding: 0;
 }
 
 /* education-and-experience ends */
