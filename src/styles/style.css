@@ -15,6 +15,76 @@
 
 /* home starts */
 
+.home__title-card {
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 80%;
+
+    /* background: red; */
+}
+
+.home__img-container {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 50%;
+}
+
+.home__img {
+    width: 100%;
+
+    border: 3px solid var(--main);
+    border-radius: 74% 26% 47% 53% / 40% 26% 74% 60%;
+    
+}
+
+.home__text {
+    position: absolute;
+    width: 75%;
+    display: inline-block;
+    bottom: 11%;
+    left: 0;
+    padding: 8px 16px;
+    z-index: 10;
+
+    border-radius: 25px;
+    color: var(--main1);
+    background: var(--main);
+    box-shadow: 3px 3px 3px 3px rgba(100, 55, 160, 0.5);
+}
+
+.home__greeting-text {
+    margin: 0;
+}
+
+.home__name-text {
+    margin: 0;
+    padding-left: 10%;
+    font-size: 48px;
+}
+
+.home__description {
+    position: absolute;
+    width: 80%;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    padding: 16px 16px;
+
+    text-align: center;
+    background: var(--main1);
+    border-radius: 25px;
+    border: solid 4px var(--main);
+    box-shadow: -3px 3px 3px 3px rgba(100, 55, 160, 0.5);
+}
+
+.home__description-text {
+    margin: 0;
+
+    color: var(--main);
+}
+
 /* socials tab starts */
 
 .socials-tab {
@@ -97,81 +167,12 @@
 
 /* socials tab ends */
 
-.home__title-card {
-    position: relative;
-    margin: auto;
-    width: 70%;
-    height: 80%;
-
-    /* background: red; */
-}
-
-.home__img-container {
-    position: absolute;
-    top: 15%;
-    right: 5%;
-    width: 50%;
-}
-
-.home__img {
-    width: 100%;
-
-    border: 3px solid var(--main);
-    border-radius: 74% 26% 47% 53% / 40% 26% 74% 60%;
-    
-}
-
-.home__text {
-    position: absolute;
-    width: 75%;
-    display: inline-block;
-    bottom: 11%;
-    left: 0;
-    padding: 8px 16px;
-    z-index: 10;
-
-    border-radius: 25px;
-    color: var(--main1);
-    background: var(--main);
-    box-shadow: 3px 3px 3px 3px rgba(100, 55, 160, 0.5);
-}
-
-.home__greeting-text {
-    margin: 0;
-}
-
-.home__name-text {
-    margin: 0;
-    padding-left: 10%;
-    font-size: 48px;
-}
-
-.home__description {
-    position: absolute;
-    width: 80%;
-    display: inline-block;
-    bottom: 0;
-    right: 0;
-    padding: 16px 16px;
-
-    text-align: center;
-    background: var(--main1);
-    border-radius: 25px;
-    border: solid 4px var(--main);
-    box-shadow: -3px 3px 3px 3px rgba(100, 55, 160, 0.5);
-}
-
-.home__description-text {
-    margin: 0;
-
-    color: var(--main);
-}
-
 /* home ends */
 
 /* about starts */
 
 #about-me {
+    display: none;
     padding: 3% 5%;
     background: var(--main);
     box-shadow: 0 0 4px 4px rgba(100, 55, 160, 0.3);
@@ -280,6 +281,7 @@
 /* education-and-experience starts */
 
 #education-and-experience {
+    display: none;
     padding: 3% 5%;
     z-index: 3;
 }
@@ -347,6 +349,7 @@
 /* personal projects starts */
 
 #personal-projects {
+    display: none;
     padding: 3% 5%;
     background: var(--main);
     box-shadow: 0 0 4px 4px rgba(100, 55, 160, 0.3);
