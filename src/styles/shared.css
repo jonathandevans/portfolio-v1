@@ -82,6 +82,10 @@ body {
     font-weight: 500;
 }
 
+.main-header__item a:hover {
+    color: var(--text);
+}
+
 .main-footer {
     height: 60px;
     background: var(--footer-background);
