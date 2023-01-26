@@ -6,22 +6,33 @@
 }
 
 .main-body {
-    margin-bottom: 15px;
     height: 750px;
-    padding: 0 15%;
+    padding: 3% 5%;
+    margin-bottom: 25px;
+}
 
-    /* background: blue; */
+.inner-container {
+    position: relative;
+    margin: 0;
+    padding: 40px 50px 10px 50px;
+    height: 100%;
 }
 
 /* home starts */
 
+#home {
+    padding-top: 0;
+}
+
+.home__inner-container {
+    padding-top: 0;
+}
+
 .home__title-card {
     position: relative;
     margin: auto;
-    width: 70%;
+    width: 65%;
     height: 80%;
-
-    /* background: red; */
 }
 
 .home__img-container {
@@ -173,7 +184,7 @@
 
 #about-me {
     display: none;
-    padding: 3% 5%;
+    
     background: var(--main);
     box-shadow: 0 0 4px 4px rgba(100, 55, 160, 0.3);
 }
