@@ -100,8 +100,8 @@
 
 .socials-tab {
     position: absolute;
-    left: 90px;
-    top: 30%;
+    left: 50px;
+    top: 25%;
     padding: 0 8px;
 
     border: solid 3px var(--main);
@@ -165,14 +165,16 @@
 .social-button--github,
 .social-button--email,
 .social-button--cv,
-.social-button--instagram {
+.social-button--instagram,
+.social-button--linkedin {
     color: var(--main);
 }
 
 .social-button--github::after,
 .social-button--email::after,
 .social-button--cv::after,
-.social-button--instagram::after {
+.social-button--instagram::after,
+.social-button--linkedin::after {
     background: var(--main);
 }
 
