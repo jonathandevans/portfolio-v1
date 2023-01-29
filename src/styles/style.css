@@ -1,14 +1,10 @@
 /* content starts */
 
-.content {
-    margin-top: 70px;
-    background: var(--background);
-}
-
 .main-body {
-    height: 750px;
+    height: 100vh;
+    min-height: 700px;
     padding: 3% 5%;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .inner-container {
@@ -19,14 +15,6 @@
 }
 
 /* home starts */
-
-#home {
-    padding-top: 0;
-}
-
-.home__inner-container {
-    padding-top: 0;
-}
 
 .home__title-card {
     position: relative;
@@ -67,12 +55,13 @@
 
 .home__greeting-text {
     margin: 0;
+    font-size: 1.5rem;
 }
 
 .home__name-text {
     margin: 0;
     padding-left: 10%;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .home__description {
@@ -94,6 +83,7 @@
     margin: 0;
 
     color: var(--main);
+    font-size: 1.2rem;
 }
 
 /* socials tab starts */
