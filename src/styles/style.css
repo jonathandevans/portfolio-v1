@@ -35,7 +35,7 @@
 
     border: 3px solid var(--main);
     border-radius: 74% 26% 47% 53% / 40% 26% 74% 60%;
-    
+
 }
 
 .home__text {
@@ -128,11 +128,13 @@
     transition: 0.3s;
 }
 
-.social-button:active, .social-button:hover {
+.social-button:active,
+.social-button:hover {
     color: var(--main1);
 }
 
-.social-button:active::after, .social-button:hover::after {
+.social-button:active::after,
+.social-button:hover::after {
     width: calc(100% + 2px);
     height: calc(100% + 2px);
     margin-left: calc(-50% - 1px);
@@ -140,16 +142,18 @@
 
 .social-button i,
 .social-button svg {
-  position: relative;
-  z-index: 1;
-  transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
 }
+
 .social-button i {
-  font-size: 25.6px;
+    font-size: 25.6px;
 }
+
 .social-button svg {
-  height: 40%;
-  width: 40%;
+    height: 40%;
+    width: 40%;
 }
 
 .social-button--github,
@@ -176,7 +180,7 @@
 
 #about-me {
     display: none;
-    
+
     background: var(--main);
     box-shadow: 0 0 4px 4px rgba(100, 55, 160, 0.3);
 }
@@ -391,7 +395,7 @@
     background: var(--main1);
     border: solid var(--main1) 4px;
     border-radius: 8px;
-    box-shadow: inset -7px -7px 0 0  var(--main);
+    box-shadow: inset -7px -7px 0 0 var(--main);
 }
 
 .projects__items .highlight {
@@ -401,7 +405,7 @@
 
 .projects__item:hover,
 .projects__item:active {
-    box-shadow: inset 7px 7px 0 0  var(--highlight);
+    box-shadow: inset 7px 7px 0 0 var(--highlight);
 }
 
 .projects__item-title {
