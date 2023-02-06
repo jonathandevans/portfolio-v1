@@ -5,6 +5,7 @@
     min-height: 700px;
     padding: 3% 5%;
     margin-bottom: 24px;
+    display: none;
 }
 
 .inner-container {
