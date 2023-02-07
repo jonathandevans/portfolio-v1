@@ -30,7 +30,7 @@
                 <li class="main-header__item"><a href="#home">// home</a></li>
                 <li class="main-header__item"><a href="#about-me">// about-me</a></li>
                 <li class="main-header__item">
-                    <a href="#education-and-experience">// education-and-experience</a>
+                    <a href="#my-expertise">// my-expertise</a>
                 </li>
                 <li class="main-header__item">
                     <a href="#personal-projects">// personal-projects</a>
@@ -151,138 +151,111 @@
             </div>
         </div>
 
-        <!-- Education-and-Experience -->
-        <div id="education-and-experience" class="main-body">
-            <div class="education__inner-container">
-                <h1 class="education__title">// education-and-experience</h1>
-                <div class="education__grid-container">
-                    <div class="education__category">
-                        <h4 class="education__category-title">
-                            Things I'm profficient at...
-                        </h4>
-                        <div class="education__list-container">
-                            <p class="education__list-title">Programming Languages:</p>
-                            <ul class="education__list">
-                                <li>Java</li>
-                                <li>Swift</li>
-                                <li>HTML, CSS, JavaScript</li>
-                                <li>Nodejs and Express.js</li>
-                            </ul>
-                        </div>
-                        <div class="education__list-container education__other-list">
-                            <p class="education__list-title">The Other Stuff:</p>
-                            <ul class="education__list">
-                                <li>Git</li>
-                                <li>UNIX Environment</li>
-                                <li>Unit Testing</li>
-                            </ul>
-                        </div>
+        <!-- expertise-and-Experience -->
+        <div id="my-expertise" class="main-body">
+            <div class="expertise__inner-container">
+                <h1 class="expertise__title">// my-expertise</h1>
+                <div class="expertise__grid-container">
+                    <div class="expertise__category">
+                        <h4>Frontend Dev</h4>
                     </div>
 
-                    <div class="education__category">
-                        <h4 class="education__category-title">Things I dabble in...</h4>
-                        <div class="education__list-container">
-                            <p class="education__list-title">Programming Languages:</p>
-                            <ul class="education__list">
-                                <li>Python</li>
-                                <li>C</li>
-                                <li>C#</li>
+                    <div class="expertise__category">
+                        <h4>App Development</h4>
+                    </div>
+
+                    <div class="expertise__category">
+                        <h4>Software Engineering</h4>
+                    </div>
+                    <div class="expertise__category expertise__category--hidden">
+                        <h4>Game Dev</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Projects -->
+        <div id="personal-projects" class="main-body">
+            <div class="projects__inner-container">
+                <h1 class="projects__title">// personal-projects</h1>
+                <div class="projects__items">
+                    <div class="projects__item">
+                        <h2 class="projects__item-title">Snake Game.</h2>
+                        <div class="projects__tags-container">
+                            <p class="projects__tags-title">Tags:</p>
+                            <ul class="projects__tags">
+                                <li class="projects__tag">Java</li>
                             </ul>
                         </div>
-                        <div class="education__list-container education__other-list">
-                            <p class="education__list-title">The Other Stuff:</p>
-                            <ul class="education__list">
-                                <li>Unity</li>
+                        <p class="projects__description">
+                            This is a simple implementation of the classic arcade game snake
+                            using Java.
+                        </p>
+                        <div class="projects__button-container">
+                            <button class="projects__github-button">
+                                <span>Go To GitHub</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects__item highlight">
+                        <h2 class="projects__item-title">Sudoku Solver API.</h2>
+                        <div class="projects__tags-container">
+                            <p class="projects__tags-title">Tags:</p>
+                            <ul class="projects__tags">
+                                <li class="projects__tag">Nodejs</li>
+                                <li class="projects__tag">Express.js</li>
+                                <li class="projects__tag">JavaScript</li>
                             </ul>
+                        </div>
+                        <p class="projects__description">
+                            This is JavaScript sudoku solver api that uses nodejs and express
+                            to respond to GET requests from a user. This program is currently
+                            hosted on my domain and can be accessed through the url
+                            api.jonathane.dev/solveSudoku/.
+                        </p>
+                        <div class="projects__button-container">
+                            <button class="projects__github-button">
+                                <span>Go To GitHub</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <h2 class="projects__item-title">Portfolio.</h2>
+                        <div class="projects__tags-container">
+                            <p class="projects__tags-title">Tags:</p>
+                            <ul class="projects__tags">
+                                <li class="projects__tag">HTML</li>
+                                <li class="projects__tag">CSS</li>
+                                <li class="projects__tag">JavaScript</li>
+                            </ul>
+                        </div>
+                        <p class="projects__description">
+                            This is the source code used to develop this online portfolio.
+                        </p>
+                        <div class="projects__button-container">
+                            <button class="projects__github-button">
+                                <span>Go To GitHub</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Personal Projects -->
-    <div id="personal-projects" class="main-body">
-        <div class="projects__inner-container">
-            <h1 class="projects__title">// personal-projects</h1>
-            <div class="projects__items">
-                <div class="projects__item">
-                    <h2 class="projects__item-title">Snake Game.</h2>
-                    <div class="projects__tags-container">
-                        <p class="projects__tags-title">Tags:</p>
-                        <ul class="projects__tags">
-                            <li class="projects__tag">Java</li>
-                        </ul>
-                    </div>
-                    <p class="projects__description">
-                        This is a simple implementation of the classic arcade game snake
-                        using Java.
-                    </p>
-                    <div class="projects__button-container">
-                        <button class="projects__github-button">
-                            <span>Go To GitHub</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="projects__item highlight">
-                    <h2 class="projects__item-title">Sudoku Solver API.</h2>
-                    <div class="projects__tags-container">
-                        <p class="projects__tags-title">Tags:</p>
-                        <ul class="projects__tags">
-                            <li class="projects__tag">Nodejs</li>
-                            <li class="projects__tag">Express.js</li>
-                            <li class="projects__tag">JavaScript</li>
-                        </ul>
-                    </div>
-                    <p class="projects__description">
-                        This is JavaScript sudoku solver api that uses nodejs and express
-                        to respond to GET requests from a user. This program is currently
-                        hosted on my domain and can be accessed through the url
-                        api.jonathane.dev/solveSudoku/.
-                    </p>
-                    <div class="projects__button-container">
-                        <button class="projects__github-button">
-                            <span>Go To GitHub</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="projects__item">
-                    <h2 class="projects__item-title">Portfolio.</h2>
-                    <div class="projects__tags-container">
-                        <p class="projects__tags-title">Tags:</p>
-                        <ul class="projects__tags">
-                            <li class="projects__tag">HTML</li>
-                            <li class="projects__tag">CSS</li>
-                            <li class="projects__tag">JavaScript</li>
-                        </ul>
-                    </div>
-                    <p class="projects__description">
-                        This is the source code used to develop this online portfolio.
-                    </p>
-                    <div class="projects__button-container">
-                        <button class="projects__github-button">
-                            <span>Go To GitHub</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="main-footer"></footer>
+        <!-- Footer -->
+        <footer class="main-footer"></footer>
 </body>
 
 </html>
