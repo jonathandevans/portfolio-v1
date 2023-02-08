@@ -251,17 +251,18 @@
 /* my-expertise starts */
 
 #my-expertise {
-    margin-top: 4rem;
-    padding-bottom: 2rem;
+  display: none;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .expertise__title {
-    width: 85%;
-    margin: 0 auto;
-    max-width: 40rem;
-  
-    font-size: 1.7rem;
-    color: var(--main);
+  width: 85%;
+  margin: 0 auto;
+  max-width: 40rem;
+
+  font-size: 1.7rem;
+  color: var(--main);
 }
 
 .expertise__grid-container {
