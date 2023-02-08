@@ -25,21 +25,29 @@
             <span>&lt;</span> jonathane <span>&gt;</span>
         </h1>
 
-        <nav class="main-header__nav">
-            <ul class="main-header__items">
-                <li class="main-header__item"><a href="#home">// home</a></li>
-                <li class="main-header__item"><a href="#about-me">// about-me</a></li>
-                <li class="main-header__item">
-                    <a href="#my-expertise">// my-expertise</a>
-                </li>
-                <li class="main-header__item">
-                    <a href="#personal-projects">// personal-projects</a>
-                </li>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="#home">// home</a></li>
+                <li class="main-nav__item"><a href="#about-me">// about-me</a></li>
+                <li class="main-nav__item"><a href="#my-expertise">// my-expertise</a></li>
+            </ul>
+        </nav>
+
+        <div id="mobile-nav__toggle" class="mobile-nav__menu-toggle">
+            <div id="mobile-nav__hamburger" class="mobile-nav__hamburger"></div>
+        </div>
+
+        <nav id="mobile-nav" class="mobile-nav">
+            <ul class="mobile-nav__items">
+                <li class="mobile-nav__item"><a href="#home"><i class="fa fa-home mobile-nav__icon"></i>// home</a></li>
+                <li class="mobile-nav__item"><a href="#about-me"><i class="fa fa-info mobile-nav__icon"></i>// about-me</a></li>
+                <li class="mobile-nav__item"><a href="#my-expertise"><i class="fa-solid fa-code mobile-nav__icon"></i>// my-expertise</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Body -->
+    <div id="backdrop" class="backdrop"></div>
     <div class="content">
         <!-- Home -->
         <div id="home" class="main-body">
@@ -256,6 +264,9 @@
 
         <!-- Footer -->
         <footer class="main-footer"></footer>
+
+        <!-- Scripts -->
+        <script src="./scripts/shared.js"></script>
 </body>
 
 </html>
