@@ -191,33 +191,36 @@ body {
 
 /* Laptop view */
 @media (min-width: 64rem) {
-  /* .main-header__nav {
-        display: none;
-        vertical-align: middle;
-        width: calc(100% - 700px);
-      
-        text-align: right;
-      }
-      
-      .main-header__items {
-        padding: 0;
-        list-style: none;
-      }
-      
-      .main-header__item {
-        display: inline-block;
-        margin: 0 16px;
-      }
-      
-      .main-header__item a {
-        text-decoration: none;
-        color: var(--heading);
-        font-weight: 500;
-        font-size: 1rem;
-      } 
-      
-      .main-header__item a:hover {
-  color: var(--text);
-}
-      */
+  .mobile-nav__menu-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    display: block;
+  }
+
+  .main-nav__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  .main-nav__item a {
+    text-decoration: none;
+    color: var(--heading);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .main-nav__item a:hover {
+    color: var(--text);
+  }
 }
