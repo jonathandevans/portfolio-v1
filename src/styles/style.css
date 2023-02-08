@@ -182,7 +182,7 @@
 /* socials tab ends */
 
 /* Laptop view */
-@media (min-width: 48rem) {
+@media (min-width: 64rem) {
   .home__inner {
     position: relative;
     width: 85%;
