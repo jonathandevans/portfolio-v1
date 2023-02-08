@@ -7,6 +7,11 @@
   padding-top: 1.5rem;
 }
 
+.home__inner {
+  position: relative;
+  margin: auto;
+}
+
 .home__title-card {
   width: 100%;
   max-width: 31rem;
