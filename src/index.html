@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link href="./styles/shared.css" rel="stylesheet" type="text/css" />
     <link href="./styles/style.css" rel="stylesheet" type="text/css" />
@@ -21,257 +21,252 @@
 <body>
     <!-- Header -->
     <header class="main-header">
-        <a class="main-header__logo-link">
-            <h1 class="main-header__logo">
-                <span>&lt;</span> jonathane <span>&gt;</span>
-            </h1>
-        </a>
-        <nav class="main-header__nav">
-            <ul class="main-header__items">
-                <li class="main-header__item"><a href="#home">// home</a></li>
-                <li class="main-header__item"><a href="#about-me">// about-me</a></li>
-                <li class="main-header__item">
-                    <a href="#education-and-experience">// education-and-experience</a>
-                </li>
-                <li class="main-header__item">
-                    <a href="#personal-projects">// personal-projects</a>
-                </li>
+        <h1 class="main-header__logo">
+            <span>&lt;</span> jonathane <span>&gt;</span>
+        </h1>
+
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="#home">// home</a></li>
+                <li class="main-nav__item"><a href="#about-me">// about-me</a></li>
+                <li class="main-nav__item"><a href="#my-expertise">// my-expertise</a></li>
+            </ul>
+        </nav>
+
+        <div id="mobile-nav__toggle" class="mobile-nav__menu-toggle">
+            <div id="mobile-nav__hamburger" class="mobile-nav__hamburger"></div>
+        </div>
+
+        <nav id="mobile-nav" class="mobile-nav">
+            <ul class="mobile-nav__items">
+                <li class="mobile-nav__item"><a href="#home"><i class="fa fa-home mobile-nav__icon"></i>// home</a></li>
+                <li class="mobile-nav__item"><a href="#about-me"><i class="fa fa-info mobile-nav__icon"></i>// about-me</a></li>
+                <li class="mobile-nav__item"><a href="#my-expertise"><i class="fa-solid fa-code mobile-nav__icon"></i>// my-expertise</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Body -->
+    <div id="backdrop" class="backdrop"></div>
     <div class="content">
         <!-- Home -->
         <div id="home" class="main-body">
-            <div class="inner-container home__inner-container">
-                <!-- Socials -->
-                <div class="socials-tab">
+            <div class="home__title-card">
+                <div class="home__img-container">
+                    <img src="./assets/images/portfolio-home-img.png" class="home__img"
+                        alt="Simple drawing of Jonathan" />
+                </div>
+                <div class="clearfix"></div>
+                <div class="home__text">
+                    <h2 class="home__greeting-text">Hi, my name is</h2>
+                    <h1 class="home__name-text">&gt;Jonathan Evans</h1>
+                </div>
+                <div class="home__description">
+                    <h3 class="home__description-text">
+                        Software engineer, frontend and app developer.
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Socials -->
+            <ul class="socials-tab">
+                <li class="socials-tab__item">
                     <a class="social-button social-button--github" href="https://github.com/jonathanedev"
                         target="_blank">
                         <i class="fa-brands fa-github"></i>
                     </a>
+                </li>
+                <li class="socials-tab__item">
                     <a class="social-button social-button--linkedin"
                         href="https://www.linkedin.com/in/jonathan-evans-60b05a263/" target="_blank">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
+                </li>
+                <li class="socials-tab__item">
                     <a class="social-button social-button--instagram" href="https://www.instagram.com/jonnyevanss_/"
                         target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
+                </li>
+                <li class="socials-tab__item">
                     <a class="social-button social-button--email" href="mailto:contact@jonathane.dev">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
+                </li>
+                <li class="socials-tab__item">
                     <a class="social-button social-button--cv" href="./assets/jonathane-cv.pdf" download="jonathane-cv"
                         target="_blank">
                         <i class="fa-solid fa-file"></i>
                     </a>
-                </div>
-
-                <div class="home__title-card">
-                    <div class="home__img-container">
-                        <img src="./assets/images/portfolio-home-img.png" class="home__img"
-                            alt="Simple drawing of Jonathan" />
-                    </div>
-                    <div class="home__text">
-                        <h2 class="home__greeting-text">Hi, my name is</h2>
-                        <h1 class="home__name-text">&gt;Jonathan Evans</h1>
-                    </div>
-                    <div class="home__description">
-                        <h3 class="home__description-text">
-                            Software engineer, frontend and app developer.
-                        </h3>
-                    </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
 
         <!-- About -->
         <div id="about-me" class="main-body">
             <div class="about__inner-container">
-                <svg class="about__corner-top-left-smaller" xmlns="http://www.w3.org/2000/svg"
+                <svg class="about__corner-top-left-smaller corner-art" xmlns="http://www.w3.org/2000/svg"
                     style="pointer-events: none" data-inlinesvg=".inlineSvgFile-4">
                     <path d="M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"></path>
                 </svg>
-                <svg class="about__corner-top-left" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none"
-                    data-inlinesvg=".inlineSvgFile-4">
+                <svg class="about__corner-top-left corner-art" xmlns="http://www.w3.org/2000/svg"
+                    style="pointer-events: none" data-inlinesvg=".inlineSvgFile-4">
                     <path d="M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"></path>
                 </svg>
 
-                <svg class="about__bar-top-right-smaller" width="300px" height="300px" viewBox="0, 0, 300, 255"
-                    xmlns="http://www.w3.org/2000/svg" style="pointer-events: none" data-inlinesvg=".inlineSvgFile-3">
+                <svg class="about__bar-top-right-smaller corner-art" width="300px" height="300px"
+                    viewBox="0, 0, 300, 255" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none"
+                    data-inlinesvg=".inlineSvgFile-3">
                     <path d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"></path>
                 </svg>
-                <svg class="about__bar-top-right" width="300px" height="300px" viewBox="0, 0, 300, 255"
+                <svg class="about__bar-top-right corner-art" width="300px" height="300px" viewBox="0, 0, 300, 255"
                     xmlns="http://www.w3.org/2000/svg" style="pointer-events: none" data-inlinesvg=".inlineSvgFile-3">
                     <path d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"></path>
                 </svg>
 
                 <h1 class="about__title">// about-me</h1>
-                <div class="about__who-am-i-container">
-                    <h2>Who Am I?</h2>
-                    <p>
-                        My name is Jonathan Evans, a second year student studying Computer
-                        Science at the University of St Andrews. I have a strong interest
-                        in app development having experience writing in Swift for iOS and
-                        most recently have been focusing on my Web Developement skills.
-                        This has led me to recently setup my own VPS allowing me to host
-                        my fun projects and this portfolio.
-                    </p>
-                </div>
-                <div class="about__interests-container">
-                    <h2>My Interests...</h2>
-                    <p>
-                        Like many of us I got started in programming because of a love for
-                        gaming. This is a passion I still maintain to this day. I also
-                        have other interests such as playing guitar, learning magic and
-                        drawing.
-                    </p>
+                <div class="about__container">
+                    <div class="about__who-am-i-container about__text-container">
+                        <h2>Who Am I?</h2>
+                        <p>
+                            My name is Jonathan Evans, a second year student studying Computer
+                            Science at the University of St Andrews. I have a strong interest
+                            in app development and web developement and hold extensive
+                            experience in OOP.
+                        </p>
+                    </div>
+                    <div class="about__interests-container about__text-container">
+                        <h2>My Interests...</h2>
+                        <p>
+                            Like many of us I got started in programming because of a love for
+                            gaming. This is a passion I still maintain to this day. I also
+                            have other interests such as playing guitar, learning close up
+                            magic and drawing.
+                        </p>
+                    </div>
                 </div>
 
-                <svg class="about__corner-bottom-right" width="300px" height="100px" viewBox="0, 200, 300, 100"
-                    xmlns="http://www.w3.org/2000/svg" style="pointer-events: none" data-inlinesvg=".inlineSvgFile-3">
+                <svg class="about__corner-bottom-right corner-art" width="300px" height="100px"
+                    viewBox="0, 200, 300, 100" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none"
+                    data-inlinesvg=".inlineSvgFile-3">
                     <path d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"></path>
                 </svg>
-                <svg class="about__corner-bottom-right-smaller" width="300px" height="150px" viewBox="0, 150, 300, 150"
-                    xmlns="http://www.w3.org/2000/svg" style="pointer-events: none" data-inlinesvg=".inlineSvgFile-3">
+                <svg class="about__corner-bottom-right-smaller corner-art" width="300px" height="150px"
+                    viewBox="0, 150, 300, 150" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none"
+                    data-inlinesvg=".inlineSvgFile-3">
                     <path d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"></path>
                 </svg>
             </div>
         </div>
 
-        <!-- Education-and-Experience -->
-        <div id="education-and-experience" class="main-body">
-            <div class="education__inner-container">
-                <h1 class="education__title">// education-and-experience</h1>
-                <div class="education__grid-container">
-                    <div class="education__category">
-                        <h4 class="education__category-title">
-                            Things I'm profficient at...
-                        </h4>
-                        <div class="education__list-container">
-                            <p class="education__list-title">Programming Languages:</p>
-                            <ul class="education__list">
-                                <li>Java</li>
-                                <li>Swift</li>
-                                <li>HTML, CSS, JavaScript</li>
-                                <li>Nodejs and Express.js</li>
-                            </ul>
-                        </div>
-                        <div class="education__list-container education__other-list">
-                            <p class="education__list-title">The Other Stuff:</p>
-                            <ul class="education__list">
-                                <li>Git</li>
-                                <li>UNIX Environment</li>
-                                <li>Unit Testing</li>
-                            </ul>
-                        </div>
+        <!-- expertise-and-Experience -->
+        <div id="my-expertise" class="main-body">
+            <div class="expertise__inner-container">
+                <h1 class="expertise__title">// my-expertise</h1>
+                <div class="expertise__grid-container">
+                    <div class="expertise__category">
+                        <h4>Frontend Dev</h4>
                     </div>
 
-                    <div class="education__category">
-                        <h4 class="education__category-title">Things I dabble in...</h4>
-                        <div class="education__list-container">
-                            <p class="education__list-title">Programming Languages:</p>
-                            <ul class="education__list">
-                                <li>Python</li>
-                                <li>C</li>
-                                <li>C#</li>
+                    <div class="expertise__category">
+                        <h4>App Development</h4>
+                    </div>
+
+                    <div class="expertise__category">
+                        <h4>Software Engineering</h4>
+                    </div>
+                    <div class="expertise__category expertise__category--hidden">
+                        <h4>Game Dev</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Projects -->
+        <div id="personal-projects" class="main-body">
+            <div class="projects__inner-container">
+                <h1 class="projects__title">// personal-projects</h1>
+                <div class="projects__items">
+                    <div class="projects__item">
+                        <h2 class="projects__item-title">Snake Game.</h2>
+                        <div class="projects__tags-container">
+                            <p class="projects__tags-title">Tags:</p>
+                            <ul class="projects__tags">
+                                <li class="projects__tag">Java</li>
                             </ul>
                         </div>
-                        <div class="education__list-container education__other-list">
-                            <p class="education__list-title">The Other Stuff:</p>
-                            <ul class="education__list">
-                                <li>Unity</li>
+                        <p class="projects__description">
+                            This is a simple implementation of the classic arcade game snake
+                            using Java.
+                        </p>
+                        <div class="projects__button-container">
+                            <button class="projects__github-button">
+                                <span>Go To GitHub</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects__item highlight">
+                        <h2 class="projects__item-title">Sudoku Solver API.</h2>
+                        <div class="projects__tags-container">
+                            <p class="projects__tags-title">Tags:</p>
+                            <ul class="projects__tags">
+                                <li class="projects__tag">Nodejs</li>
+                                <li class="projects__tag">Express.js</li>
+                                <li class="projects__tag">JavaScript</li>
                             </ul>
+                        </div>
+                        <p class="projects__description">
+                            This is JavaScript sudoku solver api that uses nodejs and express
+                            to respond to GET requests from a user. This program is currently
+                            hosted on my domain and can be accessed through the url
+                            api.jonathane.dev/solveSudoku/.
+                        </p>
+                        <div class="projects__button-container">
+                            <button class="projects__github-button">
+                                <span>Go To GitHub</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <h2 class="projects__item-title">Portfolio.</h2>
+                        <div class="projects__tags-container">
+                            <p class="projects__tags-title">Tags:</p>
+                            <ul class="projects__tags">
+                                <li class="projects__tag">HTML</li>
+                                <li class="projects__tag">CSS</li>
+                                <li class="projects__tag">JavaScript</li>
+                            </ul>
+                        </div>
+                        <p class="projects__description">
+                            This is the source code used to develop this online portfolio.
+                        </p>
+                        <div class="projects__button-container">
+                            <button class="projects__github-button">
+                                <span>Go To GitHub</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Personal Projects -->
-    <div id="personal-projects" class="main-body">
-        <div class="projects__inner-container">
-            <h1 class="projects__title">// personal-projects</h1>
-            <div class="projects__items">
-                <div class="projects__item">
-                    <h2 class="projects__item-title">Snake Game.</h2>
-                    <div class="projects__tags-container">
-                        <p class="projects__tags-title">Tags:</p>
-                        <ul class="projects__tags">
-                            <li class="projects__tag">Java</li>
-                        </ul>
-                    </div>
-                    <p class="projects__description">
-                        This is a simple implementation of the classic arcade game snake
-                        using Java.
-                    </p>
-                    <div class="projects__button-container">
-                        <button class="projects__github-button">
-                            <span>Go To GitHub</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="projects__item highlight">
-                    <h2 class="projects__item-title">Sudoku Solver API.</h2>
-                    <div class="projects__tags-container">
-                        <p class="projects__tags-title">Tags:</p>
-                        <ul class="projects__tags">
-                            <li class="projects__tag">Nodejs</li>
-                            <li class="projects__tag">Express.js</li>
-                            <li class="projects__tag">JavaScript</li>
-                        </ul>
-                    </div>
-                    <p class="projects__description">
-                        This is JavaScript sudoku solver api that uses nodejs and express
-                        to respond to GET requests from a user. This program is currently
-                        hosted on my domain and can be accessed through the url
-                        api.jonathane.dev/solveSudoku/.
-                    </p>
-                    <div class="projects__button-container">
-                        <button class="projects__github-button">
-                            <span>Go To GitHub</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="projects__item">
-                    <h2 class="projects__item-title">Portfolio.</h2>
-                    <div class="projects__tags-container">
-                        <p class="projects__tags-title">Tags:</p>
-                        <ul class="projects__tags">
-                            <li class="projects__tag">HTML</li>
-                            <li class="projects__tag">CSS</li>
-                            <li class="projects__tag">JavaScript</li>
-                        </ul>
-                    </div>
-                    <p class="projects__description">
-                        This is the source code used to develop this online portfolio.
-                    </p>
-                    <div class="projects__button-container">
-                        <button class="projects__github-button">
-                            <span>Go To GitHub</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!-- Footer -->
+        <footer class="main-footer"></footer>
 
-    <!-- Footer -->
-    <footer class="main-footer"></footer>
+        <!-- Scripts -->
+        <script src="./scripts/shared.js"></script>
 </body>
 
 </html>
