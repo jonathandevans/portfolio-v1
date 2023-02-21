@@ -7,6 +7,11 @@
   padding-top: 1.5rem;
 }
 
+.home__inner {
+  position: relative;
+  margin: auto;
+}
+
 .home__title-card {
   width: 100%;
   max-width: 31rem;
@@ -36,14 +41,14 @@
 
 .home__text {
   width: 90%;
-  max-width: 20rem;
+  max-width: 25rem;
   min-width: 12.25rem;
   padding: 8px 16px;
   z-index: 10;
   margin: auto;
   position: relative;
   top: -1.5rem;
-  left: -1rem;
+  left: -1.5rem;
 
   border-radius: 25px;
   color: var(--main1);
@@ -180,6 +185,101 @@
 }
 
 /* socials tab ends */
+
+/* Laptop view */
+@media (min-width: 64rem) {
+  .home__inner {
+    position: relative;
+    width: 85%;
+    min-width: 48.5rem;
+    margin: auto;
+  }
+
+  .home__title-card {
+    width: 60%;
+    min-width: 35rem;
+    max-width: 45rem;
+  }
+
+  .home__img-container {
+    width: 22rem;
+    max-width: none;
+  }
+
+  .home__text {
+    width: 100%;
+    min-width: 35rem;
+    max-width: 38rem;
+    padding: 8px 16px;
+    top: -2rem;
+    left: -5%;
+  }
+
+  .home__greeting-text {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .home__name-text {
+    margin: 0;
+    padding-left: 10%;
+    font-size: 3rem;
+  }
+
+  .home__description {
+    width: 100%;
+    min-width: 35rem;
+    max-width: 38rem;
+    padding: 16px 16px;
+    top: -2.7rem;
+    right: -2rem;
+  }
+
+  .home__description-text {
+    font-size: 1.2rem;
+  }
+
+  .socials-tab {
+    position: absolute;
+    width: 4rem;
+    top: 8rem;
+    padding: 0 0.5rem;
+
+    border: solid 3px var(--main);
+    border-left: none;
+    border-right: none;
+    background: var(--background);
+
+    transition:left 0.1s linear;
+  }
+
+  .socials-tab__item {
+    display: block;
+    padding: 0;
+  }
+
+  .social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+    border-radius: 100%;
+    background: var(--main1);
+    text-align: center;
+    border: solid 2px var(--main);
+    margin: 10px 0;
+  }
+}
+
+/* @media (min-width: 64rem) {
+  .socials-tab {
+    left: 7%;
+  }
+} */
 
 /* home ends */
 
