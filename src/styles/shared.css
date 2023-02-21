@@ -33,6 +33,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  min-width: 280px;
 
   background: var(--background);
   font-family: Poppins, sans-serif;
@@ -72,7 +73,7 @@ body {
   z-index: 100;
 
   background: var(--header-background);
-  border-bottom: solid 2px var(--header-highlight);
+  /* border-bottom: solid 2px var(--header-highlight); */
 }
 
 .main-header__logo {
@@ -126,6 +127,7 @@ body {
   overflow: hidden;
 
   background: var(--header-background);
+  border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   border-top: solid var(--header-highlight) 2px;
   border-left: solid var(--header-highlight) 2px;
@@ -183,7 +185,9 @@ body {
 
 @media (min-width: 64rem) {
 
-  .mobile-nav__menu-toggle {
+  .mobile-nav__menu-toggle,
+  .mobile-nav,
+  .backdrop {
     display: none;
   }
 
