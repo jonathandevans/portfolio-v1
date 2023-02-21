@@ -3,7 +3,6 @@
 /* home starts */
 
 #home {
-  min-height: 75vh;
   padding-top: 1.5rem;
 }
 
@@ -188,6 +187,10 @@
 
 /* Laptop view */
 @media (min-width: 64rem) {
+  #home {
+    min-height: 75vh;
+  }
+
   .home__inner {
     position: relative;
     width: 85%;
