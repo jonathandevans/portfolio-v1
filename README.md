@@ -1,2 +1,3 @@
 # portfolio-website
-A website used to display my public portfolio.
+
+This is the code for my old portfolio website. It isn't very good, but it was good practice.
